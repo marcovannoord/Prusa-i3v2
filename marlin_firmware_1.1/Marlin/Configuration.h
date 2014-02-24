@@ -403,10 +403,10 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {200,200,8000,760*1.1*2.0*0.84*0.783}  // default steps per unit for 16tooth pulleys
-//#define DEFAULT_AXIS_STEPS_PER_UNIT   {160,160,8000,760*1.1*2.0*0.84*0.783}  // default steps per unit for 20tooth pulleys
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   {200,200,8000,760*1.1*2.0*0.84*0.783}  // default steps per unit for 16tooth pulleys
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {160,160,8000,760*1.1*2.0*0.84*0.783}  // default steps per unit for 20tooth pulleys
 
-#define DEFAULT_MAX_FEEDRATE          {150, 150, 2, 25}    // (mm/sec)    
+#define DEFAULT_MAX_FEEDRATE          {150, 150, 4, 25}    // (mm/sec)    
 #define DEFAULT_MAX_ACCELERATION      {4000,4000,20,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
 
 #define DEFAULT_ACCELERATION          4000    // X, Y, Z and E max acceleration in mm/s^2 for printing moves
@@ -450,7 +450,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 //LCD and SD support
 //#define ULTRA_LCD  //general lcd support, also 16x2
 //#define DOGLCD  // Support for SPI LCD 128x64 (Controller ST7565R graphic Display Family)
-#define SDSUPPORT // Enable SD Card Support in Hardware Console
+//#define SDSUPPORT // Enable SD Card Support in Hardware Console
 //#define SDSLOW // Use slower SD transfer mode (not normally needed - uncomment if you're getting volume init error)
 //#define ENCODER_PULSES_PER_STEP 1 // Increase if you have a high resolution encoder
 //#define ENCODER_STEPS_PER_MENU_ITEM 5 // Set according to ENCODER_PULSES_PER_STEP or your liking
