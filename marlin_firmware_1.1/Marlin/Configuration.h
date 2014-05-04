@@ -297,7 +297,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 #define DISABLE_Z false
 #define DISABLE_E false // For all extruders
 
-#define INVERT_X_DIR true    // for Mendel set to false, for Orca set to true
+#define INVERT_X_DIR false    // for Mendel set to false, for Orca set to true
 #define INVERT_Y_DIR false    // for Mendel set to true, for Orca set to false
 #define INVERT_Z_DIR true     // for Mendel set to false, for Orca set to true
 #define INVERT_E0_DIR false   // for direct drive extruder v9 set to true, for geared extruder set to false
@@ -403,8 +403,8 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 
 // default settings
 
-//#define DEFAULT_AXIS_STEPS_PER_UNIT   {200,200,8000,760*1.1*2.0*0.84*0.783}  // default steps per unit for 16tooth pulleys
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {160,160,8000,760*1.1*2.0*0.84*0.783}  // default steps per unit for 20tooth pulleys
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {200,200,8000,760*1.1*2.0*0.84*0.783}  // default steps per unit for 16tooth pulleys
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   {160,160,8000,760*1.1*2.0*0.84*0.783}  // default steps per unit for 20tooth pulleys
 
 #define DEFAULT_MAX_FEEDRATE          {150, 150, 4, 25}    // (mm/sec)    
 #define DEFAULT_MAX_ACCELERATION      {4000,4000,20,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
@@ -433,10 +433,10 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 // M501 - reads parameters from EEPROM (if you need reset them after you changed them temporarily).
 // M502 - reverts to the default "factory settings".  You still need to store them in EEPROM afterwards if you want to.
 //define this to enable eeprom support
-//#define EEPROM_SETTINGS
+#define EEPROM_SETTINGS
 //to disable EEPROM Serial responses and decrease program space by ~1700 byte: comment this out:
 // please keep turned on if you can.
-//#define EEPROM_CHITCHAT
+#define EEPROM_CHITCHAT
 
 // Preheat Constants
 #define PLA_PREHEAT_HOTEND_TEMP 180

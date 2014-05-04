@@ -2462,13 +2462,13 @@
  #if TEMP_SENSOR_0 == -1
  	#define TEMP_0_PIN 5 // ANALOG NUMBERING
  #else
- 	#define TEMP_0_PIN 7 // ANALOG NUMBERING
+ 	#define TEMP_0_PIN 7 // ANALOG NUMBERING //should be 7
  #endif
- #define TEMP_1_PIN 6 // ANALOG NUMBERING
+ #define TEMP_1_PIN 6 // ANALOG NUMBERING  //should be 6
  #define TEMP_2_PIN -1 // ANALOG NUMBERING
  
  #define HEATER_BED_PIN 3 // BED
- #define TEMP_BED_PIN 6 // ANALOG NUMBERING
+ #define TEMP_BED_PIN 6 // ANALOG NUMBERING //should be 6
  
  #define BEEPER -1	
  
