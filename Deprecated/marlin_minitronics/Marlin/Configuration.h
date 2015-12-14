@@ -406,10 +406,10 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   {200,200,8000,760*1.1*2.0*0.84*0.783}  // default steps per unit for 16tooth pulleys
 #define DEFAULT_AXIS_STEPS_PER_UNIT   {160,160,8000,760*1.1*2.0*0.84*0.783}  // default steps per unit for 20tooth pulleys
 
-#define DEFAULT_MAX_FEEDRATE          {150, 150, 4, 25}    // (mm/sec)    
+#define DEFAULT_MAX_FEEDRATE          {150, 150, 4, 30}    // (mm/sec)    
 #define DEFAULT_MAX_ACCELERATION      {4000,4000,20,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
 
-#define DEFAULT_ACCELERATION          4000    // X, Y, Z and E max acceleration in mm/s^2 for printing moves
+#define DEFAULT_ACCELERATION          3000    // X, Y, Z and E max acceleration in mm/s^2 for printing moves
 #define DEFAULT_RETRACT_ACCELERATION  3000   // X, Y, Z and E max acceleration in mm/s^2 for retracts
 
 // Offset of the extruders (uncomment if using more than one and relying on firmware to position when changing).

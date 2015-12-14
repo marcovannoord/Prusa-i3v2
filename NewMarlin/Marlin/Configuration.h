@@ -166,7 +166,7 @@
 // When temperature exceeds max temp, your heater will be switched off.
 // This feature exists to protect your hotend from overheating accidentally, but *NOT* from thermistor short/failure!
 // You should use MINTEMP for thermistor short/failure protection.
-#define HEATER_0_MAXTEMP 250
+#define HEATER_0_MAXTEMP 245
 #define HEATER_1_MAXTEMP 275
 #define HEATER_2_MAXTEMP 275
 #define BED_MAXTEMP 150
@@ -496,7 +496,8 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,4000,760*1.1*2.0*0.84*0.783/2}  // default steps per unit for 20tooth belts
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,4000,760*1.1*2.0*0.84*0.783/2}  // default steps per unit for 20tooth belts
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {160,160,8000,760*1.1*2.0*0.84*0.783/2/2}  // default steps per unit for 20tooth belts, 32 microsteps
 #define DEFAULT_MAX_FEEDRATE          {150, 150, 7, 25}    // (mm/sec)    
 #define DEFAULT_MAX_ACCELERATION      {4000,4000,20,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
 
