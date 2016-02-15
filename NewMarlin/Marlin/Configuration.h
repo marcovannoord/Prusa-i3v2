@@ -166,7 +166,7 @@
 // When temperature exceeds max temp, your heater will be switched off.
 // This feature exists to protect your hotend from overheating accidentally, but *NOT* from thermistor short/failure!
 // You should use MINTEMP for thermistor short/failure protection.
-#define HEATER_0_MAXTEMP 245
+#define HEATER_0_MAXTEMP 250
 #define HEATER_1_MAXTEMP 275
 #define HEATER_2_MAXTEMP 275
 #define BED_MAXTEMP 150
@@ -183,12 +183,12 @@
 // PID settings:
 // Comment the following line to disable PID and enable bang-bang.
 #define PIDTEMP
-#define BANG_MAX 255 // limits current to nozzle while in bang-bang mode; 255=full current
-#define PID_MAX 255 // limits current to nozzle while PID is active (see PID_FUNCTIONAL_RANGE below); 255=full current
+#define BANG_MAX 140 // limits current to nozzle while in bang-bang mode; 255=full current
+#define PID_MAX 150 // limits current to nozzle while PID is active (see PID_FUNCTIONAL_RANGE below); 255=full current
 #ifdef PIDTEMP
   //#define PID_DEBUG // Sends debug data to the serial port.
   //#define PID_OPENLOOP 1 // Puts PID in open loop. M104/M140 sets the output power from 0 to PID_MAX
-  #define PID_FUNCTIONAL_RANGE 10 // If the temperature difference between the target temperature and the actual temperature
+  #define PID_FUNCTIONAL_RANGE 20 // If the temperature difference between the target temperature and the actual temperature
                                   // is more then PID_FUNCTIONAL_RANGE then the PID will be shut off and the heater will be set to min/max.
   #define PID_INTEGRAL_DRIVE_MAX 255  //limit for the integral term
   #define K1 0.95 //smoothing factor within the PID
@@ -196,9 +196,19 @@
 
 // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 // J-head IV-B @12v
-    #define  DEFAULT_Kp 25.89
-    #define  DEFAULT_Ki 2.45
-    #define  DEFAULT_Kd 68.29
+//    #define  DEFAULT_Kp 25.89
+//    #define  DEFAULT_Ki 2.45
+//    #define  DEFAULT_Kd 68.29
+    
+    
+// If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
+// J-head full metal
+    #define  DEFAULT_Kp 7.46
+    #define  DEFAULT_Ki 0.45
+    #define  DEFAULT_Kd 31.18
+    
+        
+    
     
 // Ultimaker
 //    #define  DEFAULT_Kp 22.2
